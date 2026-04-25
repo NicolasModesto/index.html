@@ -1,0 +1,167 @@
+body {
+    background-color:  #0f172a;
+    color: #e5e7eb;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 15px 0;
+  background-color: #0f172a;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.menu a {
+  position: relative;
+  color: #e5e7eb;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 5px;
+  transition: color 0.3s ease;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: #38bdf8;
+  transition: width 0.3s ease;
+}
+
+.menu a:hover {
+  color: #38bdf8;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+.menu a.ativo {
+  color: #38bdf8;
+}
+
+.menu a.ativo::after {
+  width: 100%;
+}
+p {
+  margin-bottom: 20px;
+}
+
+img {
+  margin: 20px 0;
+}
+
+iframe {
+  margin: 20px 0;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.tituloh1{
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.foto-nicolas {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  box-shadow: 0 0 10px rgba(255,255,255,0.5);
+}
+
+.familia {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.centralizacao {
+    text-align: center;
+}
+
+.foto-quadrada{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 3px solid white;
+}
+
+.foto-retangular{
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: cover;
+  border: 3px solid white;
+}
+
+.titulosh2 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.titulosh2::before,
+.titulosh2::after {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background: white;
+}
+
+.titulosh2 h2 {
+  background-color: white;
+  color: #0f172a;
+  padding: 8px 16px;
+  border-radius: 8px;
+  margin: 0;
+}
+
+
+.titulosh2:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+.titulos{
+    text-align: center;
+    color: #f9fafb;
+    text-decoration: underline;
+}
+
+ol {
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+ul {
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+.link {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+

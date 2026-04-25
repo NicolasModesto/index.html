@@ -1,0 +1,92 @@
+body {
+    background-color:  #0f172a;
+    color: #e5e7eb;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 15px 0;
+  background-color: #0f172a;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.menu a {
+  position: relative;
+  color: #e5e7eb;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 5px;
+  transition: color 0.3s ease;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: #38bdf8;
+  transition: width 0.3s ease;
+}
+
+.menu a:hover {
+  color: #38bdf8;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+.menu a.ativo {
+  color: #38bdf8;
+}
+
+.menu a.ativo::after {
+  width: 100%;
+}
+
+.tituloh1{
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #334155;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: white;
+  color: black;
+}
+
+td {
+  background-color: #0f172a;
+  color: #e5e7eb;
+}
+
+.link {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
